@@ -9,7 +9,7 @@ class AllFriends extends React.Component {
         <p>{this.props.age}</p>
         <p>{this.props.email}</p>
         <Link to={`/${this.props.id}`}>
-          <button>update</button>
+          <button>Update</button>
         </Link>
 
         <button onClick={() => this.props.deleteFriend(this.props.id)}>

@@ -37,16 +37,15 @@ export class FriendsList extends Component {
         })}
         <br />
         <form onSubmit={this.onSubmit}>
-          <h3>Form for adding new friend</h3>
+          <h3>Form for adding new friends</h3>
           <input
             value={this.state.name}
             onChange={this.onChange}
             name="name"
             type="text"
-            placeholder="add new friend"
+            placeholder="Add new friend here..."
           />
-          <br />
-          <button>Add new friend</button>
+          <button>Add</button>
         </form>
       </div>
     );

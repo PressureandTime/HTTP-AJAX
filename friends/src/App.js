@@ -30,7 +30,7 @@ export class App extends Component {
       id: uuid(),
       name,
       age: 39,
-      email: 'jack@yahoo.com'
+      email: 'some_random_email@yahoo.com'
     };
     axios
       .post('http://localhost:5000/friends', newFriend)
@@ -54,7 +54,7 @@ export class App extends Component {
       });
   };
 
-  updateFriend =(id, newFriend) => {
+  updateFriend = (id, newFriend) => {
     axios
       .put(`http://localhost:5000/friends/${id}`, newFriend)
       .then(response => {
@@ -68,7 +68,7 @@ export class App extends Component {
   render() {
   
     return (
-      <>
+      <div>
         <Route
           exact
           path="/"
@@ -90,7 +90,7 @@ export class App extends Component {
             return <FriendForm updateFriend={this.updateFriend} {...props} friends={this.state.friends} />;
           }}
         />
-      </>
+      </div>
     );
   }
 }

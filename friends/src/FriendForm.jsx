@@ -40,7 +40,7 @@ export class FriendForm extends Component {
     return (
       <div>
         <form onSubmit={this.onSubmit}>
-          <h3>Form for adding new friend</h3>
+          <h3>Form for updating friends</h3>
 
           <input
             value={this.state.name}
