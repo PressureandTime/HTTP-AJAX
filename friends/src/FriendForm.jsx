@@ -28,7 +28,7 @@ export class FriendForm extends Component {
 
   componentDidMount() {
     const friends = this.props.friends;
-    const id = parseInt(this.props.match.params.id, 10);
+    const id = this.props.match.params.id;
     const friend = friends.find(friend => {
       return id === friend.id;
     });
@@ -37,6 +37,7 @@ export class FriendForm extends Component {
   }
 
   render() {
+    console.log(this.props.friends)
     return (
       <div>
         <form onSubmit={this.onSubmit}>
