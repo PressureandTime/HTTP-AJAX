@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Topics:",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -9,10 +9,25 @@
     "express": "^4.16.2",
     "nodemon": "^1.14.11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0"
+  },
   "scripts": {
     "start": "nodemon server.js"
   },
   "author": "Lambda School",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PressureandTime/HTTP-AJAX.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/PressureandTime/HTTP-AJAX/issues"
+  },
+  "homepage": "https://github.com/PressureandTime/HTTP-AJAX#readme"
 }
